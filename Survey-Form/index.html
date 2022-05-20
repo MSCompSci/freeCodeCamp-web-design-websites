@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Awesome Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="survey">
+      <div class="survey-head">
+      <h1 id="title">Awesome Survey Form</h1>
+      <p id="description">Tell us how awesome we are here!</p>
+      </div>
+      <hr/>
+      <h4>Tell us about yourself!</h4>
+      <form id="survey-form">
+        <label id="name-label" for "name">Name</label>
+        <input class="user-info" id="name" type="text" required placeholder="Your Name"/>
+        <label id="email-label" for "email">Email</label>
+        <input class="user-info" id="email" type="email" required placeholder="your_email@email.com"/>
+        <label id="number-label" for "number">Age</label>
+        <input id="number" class="user-info" type="number" min="0" max="120" placeholder="Your Age"/>
+        <label id="occupation" for "dropdown">What is your occupation?</label>
+        <select id="dropdown">
+          <option value="Awesomeness-professional">Awesomeness professional</option>
+          <option value="Awesomeness-professional">Awesomeness researcher</option>
+          <option value="Awesomeness-professional">Awesomeness student</option>
+          <option value="Awesomeness-professional">Other</option>
+        </select>
+        <hr/>
+        <h4>How awesome are we?</h4>
+        <label><input name="awesomeness" type="radio" value="very" checked/> Very Awesome</label>
+        <label><input name="awesomeness" type="radio" value="extremely"/> Extremely Awesome</label>
+        <label><input name="awesomeness" type="radio" value="wickedly"/> Wickedly Awesome</label>
+        <h4>What are some things that are awesome about us?</h4>
+        <label><input  type="checkbox" value="attitude" /> Attitude</label>
+        <label><input  type="checkbox" value="coolness"/> Coolness</label>
+        <label><input  type="checkbox" value="epicness"/> Epicness</label>
+        <label><input  type="checkbox" value="epicness"/> Impeccable Vibes</label>
+        <h4>Anything else awesome you want to tell us?</h4>
+        <textarea placeholder="You're so awesome!"></textarea>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+      </div>
+    </body>
+</html>
